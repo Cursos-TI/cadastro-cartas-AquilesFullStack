@@ -73,7 +73,6 @@ int main() {
   printf("==================================\n"); 
   printf("Digite o pturisticos da carta 2: ");
   scanf(" %d", &pturisticos2);
-  H
   printf("==================================\n"); 
 
   float dp1 = (float) populacao1 / area1;
@@ -140,5 +139,16 @@ int main() {
   printf("PIB per Capita: Carta %d venceu (%d)", r6, resultado6);
   printf("Super Poder: Carta %d venceu (%d)", r7,  resultado7);
 
+  //Comparação das cartas de qual carta é a vencedora entre numero de população
+  printf("=======================================\n");
+  printf("=========COMPARAÇÃO DAS CARTAS=========\n");
+  printf("=======================================\n");
+  printf("Carta 1 - %s : (%lu)\n", cidade1 , populacao1);
+  printf("Carta 2 - %s : (%lu)\n", cidade2 , populacao2);
+  if (populacao1 > populacao2) {
+    printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
+  } else {
+    printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+  }
   return 0;
 } 
